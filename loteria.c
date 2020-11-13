@@ -47,6 +47,11 @@ int main()
     if(choice == 1) vet_random = (int*)malloc(facil * sizeof(int));
     else if(choice == 2) vet_random = (int*)malloc(medio * sizeof(int));
     else if(choice == 3) vet_random = (int*)malloc(dificil * sizeof(int));
+    else
+    {
+        printf("Nenhuma das opcoes foi escolhida!\nPrograma encerrado!\n");
+        return 0;
+    }
     if(!vet_random) return 0;
     switch(choice)
     {
